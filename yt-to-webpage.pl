@@ -8,14 +8,14 @@ my $url = shift @ARGV;
 my $lang = shift @ARGV;
 
 if (!$lang) {
-	print STDERR "Usage:\n";
-	print STDERR "$0 project-name \"https://www.youtube.com/watch?v=jNQXAC9IVRw\" language\n";
+	print STDERR "Debe usarse:\n";
+	print STDERR "$0 project-name \"https://www.youtube.com/watch?v=jNQXAC9IVRw\" lenguaje\n";
 	exit 1;
 }
 
 if (!$url || $url !~ m|^https://www.youtube.com|) {
-	print STDERR "Usage:\n";
-	print STDERR "$0 project-name \"https://www.youtube.com/watch?v=jNQXAC9IVRw\" language\n";
+	print STDERR "Debe usarse:\n";
+	print STDERR "$0 project-name \"https://www.youtube.com/watch?v=jNQXAC9IVRw\" lenguaje\n";
 	exit 1;
 }
 
