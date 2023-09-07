@@ -42,8 +42,8 @@ print $outfile <<EOF;
 <body>
 
 
-<h1>Youtube transcript</h1>
-Source: <a href="@{[$url]}" target="_blank">@{[$url]}</a>
+<h1>Transcripto de YouTube</h1>
+Fuente: <a href="@{[$url]}" target="_blank">@{[$url]}</a>
 
 <ul>
 EOF
@@ -85,7 +85,7 @@ while (my $line = <$fh>) {
 
 	print $outfile "<li>
 	<div class=\"grab\"><img src=\"images/$ts_filename.jpg\" /></div><div class=\"subtitle\"><span id=\"$this_start\">$line</span>
-<a href=\"@{[$url]}\&t=@{[$seconds]}\" target=\"blank\" class=\"videolink\">#</a>
+<a href=\"@{[$url]}\&t=@{[$seconds]}\" target=\"blank\" class=\"videolink\"> #</a>
 	</div></li>\n";
 	$last_text_line = $line;
 }
