@@ -1,28 +1,30 @@
-# Youtube-to-Webpage
+# Y2W
 
-Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.
+Basado en el proyecto de https://github.com/obra/Youtube2Webpage
 
-```./yt-to-webpage.pl project-name "videoURL"```
+Y2W es un script en Perl para generar una página web a partir de un video de Youtube, basado en los subtítulos asociados a ese mismo video, junto a capturas del mismo.
 
-## Dependencies
+```./Y2W.pl project-name "videoURL" Lenguaje```
 
-The project is built upon:
+Lenguaje es un código de dos letras que refleja el idioma del subtítulo, por ejemplo es, en, ch, etc
+
+## Dependencias
 
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 * [ffmpeg](https://ffmpeg.org/)
 
-## Using
+## Uso
 
-To use, run the Perl script with a name for the folder to create, and the video URL. For example:
+Para usarse, ejecute el script de Perl junto al nombre de la carpeta en donde se guardará el proyecto, la URL del video y el idioma
 
-```./yt-to-webpage.pl project-name "https://www.youtube.com/watch?v=jNQXAC9IVRw"```
+```./Y2W.pl nombre-proyecto "https://www.youtube.com/watch?v=jNQXAC9IVRw" es```
 
-## Output
+## Salida
 
-Running the script create a repository according to the following structure:
+Al ejecutar este script, se va a generar un repositorio con la siguiente estructura:
 
 ```
-project-name
+nombre-proyecto
 ├── images
 │   └── (…).jpg
 ├── video.vtt
@@ -31,12 +33,8 @@ project-name
 └── styles.css
 ```
 
-* The index.html file is the generated webpage.
-* The images directory contains all the screenshots, named according to their timeframe ```hours-minutes-seconds-milliseconds.jpg```.
-* The vtt file contains the captions.
-* The webm file contains the video.
-* The css file styles the webpage.
-
-## Example
-
-You can see an example at https://obra.github.io/Youtube2Webpage/example/
+* index.html es la página web creada por este script.
+* images contiene todas las capturas de pantalla, con un nombre tipo ```horas-minutos-segundos-milisegundos.jpg```.
+* El archivo .vtt contiene los subtítulos.
+* El archivo .webm contiene una copia del video en sí.
+* El archivo style.css contiene los estilos de la página web.
