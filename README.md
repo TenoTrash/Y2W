@@ -24,12 +24,12 @@ Para usarse, ejecute el script de Perl junto al nombre de la carpeta en donde se
 Al ejecutar este script, se va a generar un repositorio con la siguiente estructura:
 
 nombre-proyecto
-|- images
-	|- *.jpg
-|- video.vtt
-|- video.webm
-|- index.html
-|- styles.css
+	images
+		*.jpg
+	video.vtt
+	video.webm
+	index.html
+	styles.css
 
 * index.html es la página web creada por este script.
 * images contiene todas las capturas de pantalla, con un nombre tipo ```horas-minutos-segundos-milisegundos.jpg```.
